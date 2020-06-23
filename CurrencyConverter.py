@@ -21,7 +21,7 @@ def set_up():
             data = data.append(append, ignore_index=True)
             i += 1
 
-    return data.set_index('currency')
+    return data.set_index('currency').sort_index()
 
 
 def show_currencies(data):
